@@ -35,7 +35,7 @@ const MovieDetail = () => {
         // Fetch movie details from OMDB API
         const response = await fetch(
           `https://www.omdbapi.com/?i=${id}&apikey=${
-            process.env.NEXT_PUBLIC_OMDB_API_KEY || "your_api_key"
+            process.env.NEXT_PUBLIC_OMDB_API_KEY || "955dc222"
           }`
         );
 
