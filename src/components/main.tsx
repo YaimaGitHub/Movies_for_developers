@@ -23,7 +23,7 @@ const Main = () => {
 
       const responses = await Promise.all(
         uniqueIds.map(id => 
-          fetch(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}&plot=full`)
+          fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=955dc222&plot=full`)
             .then(res => res.ok ? res.json() : null)
             .catch(() => null)
         )
