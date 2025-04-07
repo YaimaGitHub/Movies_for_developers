@@ -34,8 +34,8 @@ const MovieDetail = () => {
 
         // Fetch movie details from OMDB API
         const response = await fetch(
-          `https://www.omdbapi.com/?i=tt3896198&apikey=955dc222
-            process.env.NEXT_PUBLIC_OMDB_API_KEY || "your_api_key"
+          `https://www.omdbapi.com/?i=${id}&apikey=${
+            process.env.NEXT_PUBLIC_OMDB_API_KEY || "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNTI5M2FhNTVlN2JhODZmMWQxNTQ4M2I2ODFiZjU2NSIsInN1YiI6IjY2NWQwNWJiZmQ5MzEzZDBkM2EwYWNkNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5fnXcNB7yfDADz2oWVBGo-lMT8D1Fy4Cj5hIQ5ixrwU"
           }`
         );
 
